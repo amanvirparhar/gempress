@@ -1,0 +1,5 @@
+google-generativeai
+pydantic
+python-dotenv
+pypub3
+html2image

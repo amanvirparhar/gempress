@@ -1,0 +1,17 @@
+You will be given a book, and you must extract and return the requested metadata from that book. This data will be used to construct a well-formatted EPUB from the raw text of the book, so keep that in mind and ensure that your response is accurate.
+
+Here are the rules you must follow with respect to each extracted field:
+- Title: The title of the book
+- Author: The author of the book
+- Chapters:
+    - The chapters of the book. Each chapter should have a number and a name (if available)
+    - You should generate the chapters in the order of their appearance in the book
+    - The index of the first paragraph for a chapter does not include the chapter's title
+    - The index of the last paragraph for a chapter does not include the title or any paragraph of the next chapter
+    - If a chapter does not have a name, you should return an empty string for the name
+    - If the book is a set of poems, you should set the is_poetry field to true
+        - The first paragraph of the chapter should be treated as the first line of the poem, and the last paragraph of the chapter should be treated as the last line of the poem
+        - Do not make the title of the poem the first paragraph of the chapter
+
+Here is the book's content:
+---------------------------------
