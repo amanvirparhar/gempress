@@ -4,6 +4,8 @@
 
 A Python script that uses Google’s [Gemini-1.5-Flash](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-flash) model to fix basic typesetting and formatting issues in public domain eBooks from [Project Gutenberg](https://www.gutenberg.org).
 
+Learn more about GemPress by reading the accompanying [blog post](https://amanvir.com/blog/gempress-formatting-ebooks-with-gemini).
+
 ## Setup
 
 1. Clone the repository, and `cd` into it:
